@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ // Copyright (c) CT Team. - All Rights Reserved
+  ~ // Unauthorized copying of this file, via any medium is strictly prohibited
+  ~ // Proprietary and confidential
+  -->
+
+<com.google.android.gms.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
