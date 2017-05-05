@@ -22,5 +22,11 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    
+    <!-- Button Styles -->
+    <style name="AppTheme.Button.Custom" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">#2196f3</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
 
 </resources>

@@ -6,65 +6,77 @@
   -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
     <Button
         android:id="@+id/setup_coordinates"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cài đặt thông số và hệ toạ độ"/>
-    <LinearLayout android:weightSum="2"
-                  android:orientation="horizontal"
-                  android:layout_width="match_parent"
-                  android:layout_height="wrap_content">
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="4dp"
+        android:text="Cài đặt thông số và hệ toạ độ"
+        android:theme="@style/AppTheme.Button.Custom"/>
+    <LinearLayout android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:paddingLeft="15dp"
+          android:paddingTop="3dp"
+          android:weightSum="2">
         <TextView
-            android:gravity="center_horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:gravity="left"
             android:text="Bluetooth"/>
-
         <Spinner
             android:id="@+id/bluetooth_device"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="left"/>
+            android:gravity="center"/>
     </LinearLayout>
     <Button
         android:id="@+id/bluetooth_connection"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Kết nối bluetooth"/>
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:paddingTop="3dp"
+        android:text="Kết nối bluetooth"
+        android:theme="@style/AppTheme.Button.Custom"/>
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="200dp"
+        android:paddingLeft="15dp">
 
-        <TableRow
-            android:weightSum="2"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3">
             <TextView
-                android:gravity="center"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:gravity="left"
                 android:text="Địa chỉ server"/>
 
             <TextView
-                android:gravity="center"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_height="100dp"
+                android:layout_weight="2"
+                android:gravity="left"
                 android:text="Cổng kết nối"/>
-        </TableRow>
+        </LinearLayout>
 
-        <TableRow
-            android:weightSum="2"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3">
 
             <Spinner
                 android:id="@+id/ip"
@@ -74,21 +86,14 @@
                 android:gravity="left"/>
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/port_connection"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:ems="10"
-                android:text="8080"
-                android:inputType="number"/>
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+                android:gravity="left"
+                android:inputType="number"
+                android:text="8080"/>
+        </LinearLayout>
     </TableLayout>
 </LinearLayout>
