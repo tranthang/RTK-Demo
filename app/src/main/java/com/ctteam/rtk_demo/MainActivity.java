@@ -78,13 +78,13 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
         Fragment fragment = null;
-        Class fragmentClass = null;
+        Class fragmentClass = SetupInfo.class;
 
         if (id == R.id.nav_map) {
             // implement real time map
             fragmentClass = Map.class;
         } else if (id == R.id.nav_main) {
-
+            fragmentClass = SetupInfo.class;
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_about) {

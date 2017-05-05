@@ -62,7 +62,7 @@ public class Map extends Fragment implements OnMapReadyCallback {
         //adding marker
         gMap.addMarker(marker);
         CameraPosition cameraPosition = new CameraPosition.Builder().target(
-                new LatLng(12.385044, 65.486671)).zoom(12).build();
+                new LatLng(69.385044, 69.486671)).zoom(12).build();
         gMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
 
     }
